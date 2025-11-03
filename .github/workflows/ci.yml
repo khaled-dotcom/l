@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    env:
+      MAX_NUM_HANDS: 2
+      MIN_DETECTION_CONFIDENCE: 0.5
+      MIN_TRACKING_CONFIDENCE: 0.5
+      CAMERA_INDEX: 0
+      FRAME_WIDTH: 440
+      FRAME_HEIGHT: 340
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Copy example env
+        run: cp .env.example .env
+
+      - name: Run tests
+        run: pytest
