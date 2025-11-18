@@ -4,7 +4,6 @@ Khaled ghalwash
 
 A real-time hand gesture recognition application built with Python, leveraging modern computer vision and machine learning techniques. The system captures hand gestures via webcam, processes them using MediaPipe for hand landmark detection, and classifies gestures using a trained machine learning model. The application features a user-friendly Streamlit interface for real-time interaction and supports containerized deployment with Docker.
 
-![Demo](src/zdemo.jpg)
 
 ## ✨ Features
 
