@@ -1,6 +1,6 @@
 # Hand Gesture Recognition System
+Khaled ghalwash
 
-## DEPI Final Project
 
 A real-time hand gesture recognition application built with Python, leveraging modern computer vision and machine learning techniques. The system captures hand gestures via webcam, processes them using MediaPipe for hand landmark detection, and classifies gestures using a trained machine learning model. The application features a user-friendly Streamlit interface for real-time interaction and supports containerized deployment with Docker.
 
@@ -16,7 +16,7 @@ A real-time hand gesture recognition application built with Python, leveraging m
 - **Monitoring**: Integration with MLflow for experiment tracking and model management
 - **Testing**: Comprehensive test suite for ensuring code reliability
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -67,7 +67,7 @@ docker run -p 8501:8501 --rm hand-gesture-app
 
 Access the application at [http://localhost:8501](http://localhost:8501)
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 ├── .github/              # GitHub Actions workflows
@@ -86,7 +86,7 @@ Access the application at [http://localhost:8501](http://localhost:8501)
 └── README.md             # This file
 ```
 
-## 📊 Dataset
+## Dataset
 
 The model is trained on the [Hand Gesture Recognition Dataset](https://www.kaggle.com/datasets/anasalwajdeh/hand-gesture-recognition-dataset-one-hand) from Kaggle, which contains various hand gesture images for classification.
 
@@ -104,15 +104,15 @@ Refer to the `Notebooks/` directory for model training and experimentation noteb
 - **MLflow** is used for experiment tracking and model management
 - Access the MLflow UI with: `mlflow ui`
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - MediaPipe for hand tracking
 - Streamlit for the web interface
